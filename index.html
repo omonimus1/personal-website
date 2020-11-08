@@ -21,7 +21,11 @@
 	<!-- Timeline work experience -->
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
-
+	<!-- Githu bactivity-->
+	<link
+	rel="stylesheet"
+	href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+	/>
 </head> 
 
 <body>
@@ -179,28 +183,82 @@
           <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+              <h4 class="timeline-title">Team Lead and Software Developer</h4>
             </div>
             <div class="timeline-body">
-              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-            </div>
+				<ol>
+					<li>Create project development proposals, analyzing the product requirements, development time, and budget.</li>
+					<li>Team building, software development</li>
+					<li>Continuous Agile Project Office Management.</li>
+				</ol>
+			</div>
           </div>
         </li>
 
         <li class="timeline-inverted">
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-            </div>
-            <div class="timeline-body">
-              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-            </div>
-          </div>
-        </li>
+			<div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+			<div class="timeline-panel">
+				<div class="timeline-heading">
+					<h4 class="timeline-title">Coding Lab Demonstrator</h4>
+				</div>
+				<div class="timeline-body">
+					<p> Mentoring students and helping them during the software design, implementation debugging
+						sessions, using ​ C++, C, ​ ​ MySQL databases​ , ​ PHP​ , ​ Git ​ , or​ Trello​.</p>
+				</div>
+			</div>
+		</li>
+
+		<li class="timeline-inverted">
+			<div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+			<div class="timeline-panel">
+				<div class="timeline-heading">
+					<h4 class="timeline-title">Software Engineering Intern</h4>
+				</div>
+				<div class="timeline-body">
+					<p>Virtual experience focused on the use of ​ Typescript, React​ and ​ Python​ for 
+						data visualization web 
+						applications.</p>
+				</div>
+			</div>
+		</li>
+  
 
     </ul>
 </div>
 
+	<div class="calendar">
+		<!-- Loading stuff -->
+		Loading the data just for you.
+	</div>
+		<section class="" id="contact">
+			<form>
+				<div class="form-group">
+					<label for="FullName">Full Name</label>
+					<input type="text" class="form-control" id="FullName" aria-describedby="nameHelp" placeholder="Your Name">
+				</div>
+
+				<div class="form-group">
+				  <label for="exampleInputEmail1">Email address</label>
+				  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+				</div>
+
+				<div class="form-group">
+					<label for="subject">Subject</label>
+					<input type="text" class="form-control" id="subject" aria-describedby="subjectHelp" placeholder="Subject">
+				</div>
+
+				<div class="form-group">
+					<label for="message">Message</label>
+					<input type="message" class="form-control" id="message" aria-describedby="messageHelp" placeholder="Your message">
+				  </div>
+				
+				<p>Add a small recatchpa here</p>
+				<div class="g-recaptcha" data-sitekey="your_site_key"></div>
+
+
+				<button type="submit" class="btn btn-primary">Submit</button>
+			  </form>
+		</section>
 
 		<br>
 	    <footer class="footer text-center py-2 theme-bg-dark">
@@ -247,8 +305,28 @@
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
     <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
-    <script src="assets/js/demo/style-switcher.js"></script>     
-    
+	<script src="assets/js/demo/style-switcher.js"></script>   
+	
+	<!--Recaptcha-->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+	<script
+  		src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+	</script>
+   
+   <script>
+		GitHubCalendar(".calendar", "omonimus1");
+
+		// or enable responsive functionality:
+		GitHubCalendar(".calendar", "omonimus1", { responsive: true });
+
+		// Use a proxy
+		GitHubCalendar(".calendar", "omonimus1", {
+		proxy (username) {
+			return fetch(`https://your-proxy.com/github?user=${username}`)
+		}
+		}).then(r => r.text())
+	</script>
 
 </body>
 </html> 
