@@ -6,6 +6,10 @@
     content: "\f13a";
   }
 
+.card-title{
+    font-size : 1.8rem !important; 
+}
+
 .col-lg-4{
     padding-bottom: 2rem;
 }
