@@ -6,6 +6,10 @@
     content: "\f13a";
   }
 
+.col-lg-4{
+    padding-bottom: 2rem;
+}
+
 .contact-form
 {
     padding: 3rem;
