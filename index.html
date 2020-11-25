@@ -96,7 +96,7 @@
 				<i data-final="A"></i>
 				<i data-final="V"></i>
 				<i data-final="I"></i>
-				<i data-final="D"</i>
+				<i data-final="D"></i>
 				<i data-final="E"></i>
 				<i data-final=" "></i>
 				<i data-final="P"></i>
@@ -450,15 +450,16 @@
 
 
 	<script>
-		function count() {
-			// Set of lettrs to show while building up the string
+        function count() {
             var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            var numbers = "0123456789"
+            var string = numbers + letters;
             var allCounters = document.querySelectorAll(".counter > i");
 
             allCounters.forEach(function (el) {
                 var duration = 1000 + Array.from(allCounters).indexOf(el) * 1000;
                 var interval = setInterval(function () {
-                    el.innerText = letters.charAt(Math.random() * string.length);
+                    el.innerText = string.charAt(Math.random() * string.length);
                     duration = duration - 50;
                     if (duration <= 0) {
                         clearInterval(interval);
@@ -468,8 +469,11 @@
             });
         }
 
-        count();
-        document.addEventListener('click', count)
+        //count();
+		//document.addEventListener('click', count);
+        window.onload = function () {
+            count();
+        };
 	</script>
 
 </body>
