@@ -14,9 +14,10 @@
     padding-bottom: 2rem;
 }
 
-
-.contact-form
-{
+.image-header {
+    width: 100% !important;
+}
+.contact-form {
     padding: 3rem;
 }
 

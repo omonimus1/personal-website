@@ -87,27 +87,29 @@
     </header>
     
     <div class="main-wrapper">
-	    <section class="cta-section theme-bg-light py-5">
-		    <div class="container text-center">
-			    <img src="assets/images/dev-resilience-group.jpg" alt="team picture">
-		    </div><!--//container-->
-	    </section>
-	    <section class="blog-list px-3 py-5 p-md-5">
-		    <div class="container">
-				<!--			    <div class="item mb-5">
-				    <div class="media">
-					    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="assets/images/blog/blog-post-thumb-1.jpg" alt="image">
-					    <div class="media-body">
-						    <h3 class="title mb-1"><a href="blog-post.html">Why Every Developer Should Have A Blog</a></h3>
-						    <div class="meta mb-1"><span class="date">Published 2 days ago</span><span class="time">5 min read</span><span class="comment"><a href="#">8 comments</a></span></div>
-						    <div class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies...</div>
-						    <a class="more-link" href="blog-post.html">Read more &rarr;</a>
-					    </div>//media-body
-				    </div>
-				</div>item-->
-				
-		    </div>
-	    </section>
+		<section class="cta-section theme-bg-light py-5">
+			<div class="text-center">
+				<img class="image-header" src="assets/images/dev-resilience-group.jpg" alt="team picture">
+			</div><!--//container-->
+			<div class="counter">
+				<i data-final="D"></i>
+				<i data-final="A"></i>
+				<i data-final="V"></i>
+				<i data-final="I"></i>
+				<i data-final="D"</i>
+				<i data-final="E"></i>
+				<i data-final=" "></i>
+				<i data-final="P"></i>
+				<i data-final="O"></i>
+				<i data-final="L"></i>
+				<i data-final="L"></i>
+				<i data-final="I"></i>
+				<i data-final="C"></i>
+				<i data-final="I"></i>
+				<i data-final="N"></i>
+				<i data-final="O"></i>
+			</div>
+		</section>
 		
 		<section class="" id="education">
 			
@@ -444,6 +446,30 @@
 			return fetch(`https://your-proxy.com/github?user=omonimus1`)
 		}
 		}).then(r => r.text())
+	</script>
+
+
+	<script>
+		function count() {
+			// Set of lettrs to show while building up the string
+            var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            var allCounters = document.querySelectorAll(".counter > i");
+
+            allCounters.forEach(function (el) {
+                var duration = 1000 + Array.from(allCounters).indexOf(el) * 1000;
+                var interval = setInterval(function () {
+                    el.innerText = letters.charAt(Math.random() * string.length);
+                    duration = duration - 50;
+                    if (duration <= 0) {
+                        clearInterval(interval);
+                        el.innerText = el.getAttribute("data-final");
+                    }
+                }, 50);
+            });
+        }
+
+        count();
+        document.addEventListener('click', count)
 	</script>
 
 </body>
