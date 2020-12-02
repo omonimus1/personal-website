@@ -1,4 +1,16 @@
 
+/*Education card collapse*/
+.card-header.collapsed {
+    background-color: blue;
+    color: white !important;
+}
+
+.card-header:not(.collapsed) {
+    background-color: rgba(0,0,0,0.03);
+     color: green;
+}
+
+
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
 .counter {
     height: 100%;
