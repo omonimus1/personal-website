@@ -1,254 +1,597 @@
-<!DOCTYPE html>
-<html lang="en"> 
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Davide Pollicino </title>
-    
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blog Template">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico"> 
-    
-    <!-- FontAwesome JS-->
+	<title>Davide Pollicino </title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Blog Template">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!-- FontAwesome JS-->
 	<script defer src="assets/fontawesome/js/all.min.js"></script>
-    
-    <!-- Theme CSS -->  
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<!-- Theme CSS -->
 	<link id="theme-style" rel="stylesheet" href="assets/css/theme-3.css">
 	<link id="theme-style" rel="stylesheet" href="assets/css/custome-style.css">
 
 	<!-- Timeline work experience -->
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
-
-</head> 
+	<!-- Githu bactivity-->
+	<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+</head>
 
 <body>
-    
-    <header class="header text-center">	    
-	    <h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Davide Pollicino</a></h1>
-        
-	    <nav class="navbar navbar-expand-lg navbar-dark" >
-           
+	<header class="header text-center">
+		<!-- 
+			<nav class="navbar navbar-expand-lg navbar-dark">
+
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon"></span>
 			</button>
 
-			<div id="navigation" class="collapse navbar-collapse flex-column" >
-				<div class="profile-section pt-3 pt-lg-0">
-				    <img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile.png" alt="image" >			
-					
-					<ul class="social-list list-inline py-3 mx-auto">
-						<li class="list-inline-item"><a href="https://www.linkedin.com/in/davidepollicino7/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="https://github.com/omonimus1"><i class="fab fa-github-alt fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="https://www.hackerrank.com/davidepollicino1"><i class="fab fa-hackerrank"></i></a></li>
+	<div id="navigation" class="collapse navbar-collapse flex-column">
+		<div class="profile-section pt-3 pt-lg-0">
+			<img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile_davide_pollicino.jpg" alt="image">
 
-			        </ul><!--//social-list-->
-			        <hr> 
-				</div><!--//profile-section-->
-				
-				<ul class="navbar-nav flex-column text-left">
-					<li class="nav-item active">
-					    <a class="nav-link" href="index.html"> Home<span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-					    <a class="nav-link" href="about.html">About</a>
-					</li>
-					<li class="nav-item">
-					    <a class="nav-link" href="#education">Education </a>
-					</li>
-					<li class="nav-item">
-					    <a class="nav-link" href="#work">Experience</a>
-					</li>
-					<li class="nav-item">
-					    <a class="nav-link" href="#project">Projects</a>
-					</li>
-					<li class="nav-item">
-					    <a class="nav-link" href="#contact">Contact</a>
-					</li>
-					<!--
-					<li class="nav-item">
-					    <a class="nav-link" href="blog-post.html">Blog Post</a>
-					</li> -->
+			<ul class="social-list list-inline py-3 mx-auto">
+				<li class="list-inline-item"><a href="https://www.linkedin.com/in/davidepollicino7/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+				<li class="list-inline-item"><a href="https://github.com/omonimus1"><i class="fab fa-github-alt fa-fw"></i></a></li>
+				<li class="list-inline-item"><a href="https://www.hackerrank.com/davidepollicino1"><i class="fab fa-hackerrank"></i></a></li>
 
-				</ul>
-			</div>
-		</nav>
-    </header>
-    
-    <div class="main-wrapper">
-	    <section class="cta-section theme-bg-light py-5">
-		    <div class="container text-center">
-			    <p>iNSERT here image</p>
-		    </div><!--//container-->
-	    </section>
-	    <section class="blog-list px-3 py-5 p-md-5">
-		    <div class="container">
-				<!--			    <div class="item mb-5">
-				    <div class="media">
-					    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="assets/images/blog/blog-post-thumb-1.jpg" alt="image">
-					    <div class="media-body">
-						    <h3 class="title mb-1"><a href="blog-post.html">Why Every Developer Should Have A Blog</a></h3>
-						    <div class="meta mb-1"><span class="date">Published 2 days ago</span><span class="time">5 min read</span><span class="comment"><a href="#">8 comments</a></span></div>
-						    <div class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies...</div>
-						    <a class="more-link" href="blog-post.html">Read more &rarr;</a>
-					    </div>//media-body
-				    </div>
-				</div>item-->
-				
-		    </div>
-	    </section>
-		
-		<section class="" id="education">
-			
-			<div class="container">
-				<h3>Education</h3>
+			</ul>
+			<hr>
+		</div>
 
-			<div id="accordion">
-				<div class="card">
-				  <div class="card-header" id="headingOne">
-					<h5 class="mb-0">
-					  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-						Edinburgh Napier University- Bachelor Computer Science
-					  </button>
-					</h5>
-				  </div>
-			  
-				  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-					<div class="card-body">
-						<ul>
-							<li>GeeksforGeeks Campus ambassador</li>
-							<li>Microsoft Student Learn</li>
-							<li>Member of the <a href="https://enucs.org.uk/">Napier University Computing Science Society</a></li>
-						</ul>
-					</div>
-				  </div>
+		<ul class="navbar-nav flex-column text-left">
+
+			<li class="nav-item">
+				<a class="nav-link" href="about.html">About</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" href="#education">Education</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="blog-list.html">Blog</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#work">Experience</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#project">Projects</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#contact">Contact</a>
+			</li>
+		</ul>
+	</div>
+
+
+		</nav> 		-->
+
+	</header>
+
+	<div class="main-wrapper">
+		<section class="cta-section theme-bg-light py-5">
+			<div class="text-center">
+				<div class="counter">
+					<i data-final="D"></i>
+					<i data-final="A"></i>
+					<i data-final="V"></i>
+					<i data-final="I"></i>
+					<i data-final="D"></i>
+					<i data-final="E"></i>
+					<i data-final=" "></i>
+					<i data-final="P"></i>
+					<i data-final="O"></i>
+					<i data-final="L"></i>
+					<i data-final="L"></i>
+					<i data-final="I"></i>
+					<i data-final="C"></i>
+					<i data-final="I"></i>
+					<i data-final="N"></i>
+					<i data-final="O"></i>
 				</div>
-				<div class="card">
-				  <div class="card-header" id="headingTwo">
-					<h5 class="mb-0">
-					  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-						ITIS Vittorio Emanuele III - IT & Telecommunication Diploma 
-					  </button>
-					</h5>
-				  </div>
-				  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-					<div class="card-body">
-						<ul>
-							<li>Finalist of the <a href="https://www.olimpiadi-informatica.it/">OIS</a> Competitive Programming contest</li>
-						</ul>
-					</div>
-				  </div>
-				</div>
-				<div class="card">
-				  <div class="card-header" id="headingThree">
-					<h5 class="mb-0">
-					  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-						LEAD THE FUTURE MENTORSHIP
-					  </button>
-					</h5>
-				  </div>
-				  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-					<div class="card-body">
-						<p>
-							Among the few italian students selected to be mentees, with acceptance rate below 20%.
-							<a href="https://leadthefuture.tech/">LeadTheFuture</a> empowers top-performing students to achieve their goals giving one-on-one guidance
-							from mentors coming from the world’s leading STEM.
-						  </p>
-					</div>
-				  </div>
-				</div>
-			  </div>
+			</div><!--//container-->
 
 		</section>
 
+		<!--About me section-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm">
+					<div class="row">
+						<div class="col-sm">
+							<strong>Full Name:</strong>
+						</div>
+						<div class="col-sm">
+							<p>Davide Pollicino</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm">
+							<strong>Email:</strong>
+						</div>
+						<div class="col-sm">
+							<p>davidepollicino2015@gmail.com</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm">
+							<strong>School:</strong>
+						</div>
+						<div class="col-sm">
+							<p>Napier University</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm">
+							<strong>Expected Graduation: </strong>
+						</div>
+						<div class="col-sm">
+							<p>May 2022</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm">
+							<strong>Major:</strong>
+						</div>
+						<div class="col-sm">
+							<p>Computer Science (BSE)</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm">
+					<h3>Hi There!</h3>
+					<p>
+						Thanks for checking out my website! My name's Davide Pollicino, and I'm a student, programmer, and engineer at heart. <br>
 
-		<!-- WORK EXPERIENCE -->
-		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+						I'm from Palermo, Italy, and I'm currently a junior at Napier university (class of 2022). I've been coding since I was 14 years old,
+						and programming has been a central part of my life ever since. Within the field of software engineering, I'm primarily interested in working
+						with distributed systems, and complex platform infrastructure. I have experience in a variety of programming languages
+						and disciplines, and make sure to check out some of my projects and work experiences below.
+						<br>
+					</p>
+					<ul class="text-center container justify-content-center social-list list-inline py-3 mx-auto">
+						<li class="list-inline-item"><a href="https://www.linkedin.com/in/davidepollicino7/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="https://github.com/omonimus1"><i class="fab fa-github-alt fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.hackerrank.com/davidepollicino1"><i class="fab fa-hackerrank"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<section class="" id="education">
+			<div class="container">
+				<h3>Education</h3>
+				<div id="accordion">
+					<div class="card">
+						<div class="card-header" id="headingOne">
+							<h5 class="mb-0">
+								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+									Napier University-BSc(Hons) of Computer Science
+								</button>
+							</h5>
+						</div>
 
-<div class="container" id="work">
-    <div class="page-header">
-        <h1 id="timeline">WORK EXPERIENCE</h1>
-    </div>
-    <ul class="timeline">
-        <li class="timeline-inverted">
-          <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-            </div>
-            <div class="timeline-body">
-              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-            </div>
-          </div>
-        </li>
+						<div id="collapseOne" class=" accordion-body collapse  accordion-heading" aria-expanded="false" aria-labelledby="headingOne" data-parent="#accordion">
+							<div class="card-body">
+								<p>Expected GPA: 3.5/4.0</p>
+								<p>During the Bachelor program, I have been working as:</p>
+								<ul>
+									<li>GeeksforGeeks <a href="https://auth.geeksforgeeks.org/user/davidepollicino/practice/">Campus ambassador </a></li>
+									<li>Microsoft Student Learn <a href="https://studentambassadors.microsoft.com/profile/50889">Ambassador </a></li>
+									<li>Competitive Programming coach - <a href="https://github.com/omonimus1/competitive-programming"> Creator of the Competitive Programming guide </a></li>
+									<li>Social Media Officer at <a href="https://enucs.org.uk/">Napier Computing Science Society</a></li>
+								</ul>
+								<p>Relevant coursework: </p>
+								<ul>
+									<li>SET08122: Algorithms And Data Structures</li>
+									<li>SET09122: Artificial Intelligence </li>
+									<li>SET09120: Data Analytics</li>
+									<li>SET09102: Software Engineering</li>
+									<li>SET08420: Database Systems</li>
+									<li>CSN08116: Operating Systems</li>
+									<li>SET08119: Object Oriented Software Development</li>
+									<li>SET08103: Software Engineering Methods</li>
+									<li>SET08101: Web Technologies</li>
+									<li>IMD07101: Introduction to Human Computer Interaction</li>
+									<li>SET07110: Foundation of Software Design and Development</li>
+									<li>SET07109: Programming Fundamentals</li>
+									<li>SET07106: Mathematics for Software Enginnering</li>
+									<li>ELE07102: Foundation of Matehamatics</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingTwo">
+							<h5 class="mb-0">
+								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									Vittorio Emanuele III - IT Diploma
+								</button>
+							</h5>
+						</div>
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+							<div class="card-body">
+								<ul>
+									<li>I graduated with 93% from Vittorio Emanuele III, an IT specialised school located in Palermo, Italy.</li>
+									<li>I have been a member of the HBFS team, first school team classified at final round of Competitive Programmign OIS competition.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingThree">
+							<h5 class="mb-0">
+								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									LEAD THE FUTURE MENTORSHIP
+								</button>
+							</h5>
+						</div>
+						<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+							<div class="card-body">
+								<p>
+									Among the few italian students selected to be mentees, with acceptance rate below 20%.
+									<a href="https://leadthefuture.tech/">LeadTheFuture</a> empowers top-performing students to achieve their goals giving one-on-one guidance
+									from mentors coming from the world’s leading STEM.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-        <li class="timeline-inverted">
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-            </div>
-            <div class="timeline-body">
-              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-            </div>
-          </div>
-        </li>
+		</section>
+		<hr>
+		<div id="fh5co-resume" class="fh5co-bg-color">
+			<div class="container">
+				<h3>Work Experience</h3>
 
-    </ul>
-</div>
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0">
+						<ul class="timeline">
+							<li class="animate-box timeline-unverted">
+								<div class="timeline-badge"><i class="fas fa-code"></i></div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h3 class="timeline-title">Team Led and Software Developer</h3>
+										<span class="company">NDWebSolutions</span>
+										<span class="time">July 2020 - PRESENT</span>
+									</div>
+									<div class="timeline-body">
+										<p>
+											In charge of planning and executing the IT department: <br>
+											• Coordinated international teams from input to output, responsible for the outcome. <br>
+											• Responsible for project requirement analysis, contract development, and project budgets. <br>
+											• Responsible for long-term management plan and analysis.
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="timeline-inverted animate-box">
+								<div class="timeline-badge"><i class="fas fa-clipboard"></i></div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h3 class="timeline-title">Lab Demonstrator</h3>
+										<span class="company">Edinburgh Napier University</span>
+										<span class="time">January 2020 - October 2020</span>
+									</div>
+									<div class="timeline-body">
+										<p>
+											• I worked with a team of other undergraduates, graduate students, and faculty to assist students during their practical lab sessions at Napier University. <br>
+											• My role has been focused on the creation of qualitative feedback for students regarding program design, efficiency, and style.
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="animate-box timeline-unverted">
+								<div class="timeline-badge"><i class="fas fa-code"></i></div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h3 class="timeline-title">Software Enginner Virtual Intern</h3>
+										<span class="company">JPMorgan Chase & Co. </span>
+										<span class="time">July 2020 - August 2020</span>
+									</div>
+									<div class="timeline-body">
+										<p>
+											• I have been involved in the debug and testing of a web app used to visualize livestock prices,
+											in order to help JPMorgan Brokers best arranges transactions between a buyer and a seller for
+											a commission when a financial deal is executed, according to the type of stock and its price. <br>
+											• During this experience, I have been using Python, having also the opportunity to learn the
+											basics of TypeScript and React.
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="timeline-inverted animate-box">
+								<div class="timeline-badge"><i class="fas fa-code"></i></div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h3 class="timeline-title">Web Developer intern</h3>
+										<span class="company">Giuseppe Matranga</span>
+										<span class="time">March 2020 - May 2020</span>
+									</div>
+									<div class="timeline-body">
+										<p>
+											• I have been involved in the design and implementation of a car-rent platform. During this experience,
+											I had to work on the Boostrap skeleton template, implement the database using Django Models, implement
+											views and forms using Diango views and Django Forms. <br>
+											• For this project, I had the opportunity to use Jira as a task management tool, using Agile as a
+											development methodology.
+										</p>
+									</div>
+								</div>
+							</li>
 
 
-		<br>
-	    <footer class="footer text-center py-2 theme-bg-dark">
-		   
-	        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-            <small class="copyright">&copy; Copyright 2020 
-				<a href="https://www.linkedin.com/in/davidepollicino7/" >Davide Pollicino </a></small>
-		   
-	    </footer>
-    
-    </div><!--//main-wrapper-->
-    
-    
-    
-   
-    <!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** 
-    <div id="config-panel" class="config-panel d-none d-lg-block">
-        <div class="panel-inner">
-            <a id="config-trigger" class="config-trigger config-panel-hide text-center" href="#"><i class="fas fa-cog fa-spin mx-auto" data-fa-transform="down-6" ></i></a>
-            <h5 class="panel-title">Choose Colour</h5>
-            <ul id="color-options" class="list-inline mb-0">
-                <li class="theme-1 active list-inline-item"><a data-style="assets/css/theme-1.css" href="#"></a></li>
-                <li class="theme-2  list-inline-item"><a data-style="assets/css/theme-2.css" href="#"></a></li>
-                <li class="theme-3  list-inline-item"><a data-style="assets/css/theme-3.css" href="#"></a></li>
-                <li class="theme-4  list-inline-item"><a data-style="assets/css/theme-4.css" href="#"></a></li>
-                <li class="theme-5  list-inline-item"><a data-style="assets/css/theme-5.css" href="#"></a></li>
-                <li class="theme-6  list-inline-item"><a data-style="assets/css/theme-6.css" href="#"></a></li>
-                <li class="theme-7  list-inline-item"><a data-style="assets/css/theme-7.css" href="#"></a></li>
-                <li class="theme-8  list-inline-item"><a data-style="assets/css/theme-8.css" href="#"></a></li>
-            </ul>
-            <a id="config-close" class="close" href="#"><i class="fa fa-times-circle"></i></a>
-        </div>//panel-inner
-    </div> configure-panel-->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    
-       
-    <!-- Javascript -->          
-    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
-    <script src="assets/plugins/popper.min.js"></script> 
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+		<hr>
+		<div class="container">
+			<div class="calendar">
+				<!-- Loading stuff -->
+				Loading the Github Activities
+			</div>
+		</div>
+
+		<hr>
+
+		<!--Personal Project section-->
+		<div class="container">
+			<h3 id="timeline">Projects</h3>
+			<div class id="project">
+				<br>
+				<div class="row">
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 18rem;">
+							<div class="card-body">
+								<h5 class="card-title">Competitive Programming guide</h5>
+								<div class="card-text">
+									<li>
+										<strong>Algorithm</strong> and <strong>Data-structures</strong> guide reliazed
+										crearting learning material for students and professionals of every level.
+									</li>
+									<li>+100 stars <span class="glyphicon glyphicon-star" aria-hidden="true"></span>on GitHub</li>
+								</div>
+								<div class="border-light p-3 mb-4">
+									<div class="text-center">
+										<a href="https://github.com/omonimus1/competitive-programming"><button type="button" class="btn btn-primary">See more</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 18rem;">
+
+							<div class="card-body">
+								<h5 class="card-title">Pizzeria The King</h5>
+								<div class="card-text">
+									<li>Hosted on <strong>AWS S3</strong></li>
+									<li><stong>Built using HTML, CSS, JavaScript, Boostrap</stong></li>
+									<li>+2 stars<span class="glyphicon glyphicon-star" aria-hidden="true"></span>on GitHub</li>
+								</div>
+								<div class="border-light p-3 mb-4">
+									<div class="text-center">
+										<a href="https://pizzeria-king-webapp.s3.eu-west-2.amazonaws.com/pizzeria-the-king/index.html"><button type="button" class="btn btn-primary">See more</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 18rem;">
+
+							<div class="card-body">
+								<h5 class="card-title">E-Portfolio</h5>
+								<div class="card-text">
+									<p>Created using: <strong>HTML, CSS, JavaScript, Bootstrap, Github</strong></p>
+									<li>VPS set-up</li>
+									<li>Use of <strong>Google Cloud Console</strong></li>
+									<li>Use of <strong>filezilla</strong></li>
+								</div>
+								<div class="border-light p-3 mb-4">
+									<div class="text-center">
+										<a href="https://github.com/omonimus1/personal-website"><button type="button" class="btn btn-primary">See more</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 18rem;">
+							<div class="card-body">
+								<h5 class="card-title">Vocal Personal Assistant</h5>
+								<p class="card-text">
+								<p> </p>
+								<p>It uses vocal command to:</p>
+								<li><strong>Vocal Personal Assistant developed using <strong>Python</strong> and <strong>Google Speech recognition</strong></li>
+								<li>+3<span class="glyphicon glyphicon-star" aria-hidden="true"></span>on GitHub</li>
+								With supporting text below as a natural lead-in to additional content.</p>
+								<div class="text-center">
+									<a href="https://github.com/omonimus1/personal-website"><button type="button" class="btn btn-primary">See more</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="text-center">
+			<a class="btn btn-secondary" href="https://github.com/omonimus1" role="button">View More</a>
+		</div>
+
+		<hr>
+		<div class="container">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="card">
+							<div class="card-body">
+								<h4 class="card-title mb-5 text-left">Certifications</h4>
+
+								<div class="hori-timeline" dir="ltr">
+									<ul class="list-inline events">
+										<li class="list-inline-item event-list">
+											<div class="px-4">
+												<div class="event-date bg-soft-primary text-primary">July 2020</div>
+												<h5 class="font-size-16">Python </h5>
+												<p class="text-muted">HacherRank</p>
+											</div>
+										</li>
+										<li class="list-inline-item event-list">
+											<div class="px-4">
+												<div class="event-date bg-soft-success text-success">June 2020</div>
+												<h5 class="font-size-16">AI for everyone</h5>
+												<p class="text-muted">Coursera</p>
+											</div>
+										</li>
+										<li class="list-inline-item event-list">
+											<div class="px-4">
+												<div class="event-date bg-soft-danger text-danger">June 2020</div>
+												<h5 class="font-size-16">Machine Learning</h5>
+												<p class="text-muted">Linkedln</p>
+											</div>
+										</li>
+										<li class="list-inline-item event-list">
+											<div class="px-4">
+												<div class="event-date bg-soft-warning text-primary">May 2020</div>
+												<h5 class="font-size-16">Fundamentals of Digital Marketing</h5>
+												<p class="text-muted">Google</p>
+											</div>
+										</li>
+										<li class="list-inline-item event-list">
+											<div class="px-4">
+												<div class="event-date bg-soft-warning text-warning">May 2020</div>
+												<h5 class="font-size-16">Git Essential Training</h5>
+												<p class="text-muted">Linkedln</p>
+											</div>
+										</li>
+										<li class="list-inline-item event-list">
+											<div class="px-4">
+												<div class="event-date bg-soft-warning text-success">May 2020</div>
+												<h5 class="font-size-16">Learning Cloud Computing</h5>
+												<p class="text-muted">Linkedln</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="container">
+			<h3>Contact Me</h3>
+			<div class="container-fluid">
+				<form action="https://getform.io/f/72cc4139-6aa0-4a2b-8e58-ffb94dd92717" method="POST">
+					<div class="form-group">
+						<label for="name">Full Name</label>
+						<input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+					</div>
+					<div class="form-group">
+						<label for="message">Message</label>
+						<input type="text" class="form-control" id="message" name="message" placeholder="Your message">
+					</div>
+
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+		</div>
+		<br><br>
+		<footer class="footer text-center py-2 theme-bg-dark">
+			<small class="copyright">
+				&copy; Copyright 2020
+				<a href="https://www.linkedin.com/in/davidepollicino7/">Davide Pollicino </a>
+			</small>
+		</footer>
+
+	</div><!--//main-wrapper-->
+	<script src="assets/plugins/jquery-3.4.1.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> 
+	<script src="assets/plugins/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 
 	<!--Time Line work experience-->
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
-    <script src="assets/js/demo/style-switcher.js"></script>     
-    
+
+
+	<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+	</script>
+
+	<script>
+		function onSubmit(token) {
+			document.getElementById("demo-form").submit();
+		}
+	</script>
+
+	<script>
+		GitHubCalendar(".calendar", "omonimus1");
+
+		// or enable responsive functionality:
+		GitHubCalendar(".calendar", "omonimus1", { responsive: true });
+
+		// Use a proxy
+		GitHubCalendar(".calendar", "omonimus1", {
+			proxy(username) {
+				return fetch(`https://your-proxy.com/github?user=omonimus1`)
+			}
+		}).then(r => r.text())
+	</script>
+
+
+	<script>
+		function count() {
+			var letters = "ABCDEVILNOP";
+			var numbers = "693"
+			var string = numbers + letters;
+			var allCounters = document.querySelectorAll(".counter > i");
+
+			allCounters.forEach(function (el) {
+				var duration = 1000 + Array.from(allCounters).indexOf(el) * 1000;
+				var interval = setInterval(function () {
+					el.innerText = string.charAt(Math.random() * string.length);
+					duration = duration - 50;
+					if (duration <= 0) {
+						clearInterval(interval);
+						el.innerText = el.getAttribute("data-final");
+					}
+				}, 50);
+			});
+		}
+
+		window.onload = function () {
+			count();
+		};
+	</script>
 
 </body>
 </html> 
