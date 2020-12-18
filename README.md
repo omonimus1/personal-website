@@ -5,13 +5,11 @@ You see the Portfolio visiting [https://omonimus1.github.io/personal-website/](h
 
 ### Why do I am working on it?
 
-Ignoring the fact that I had experience in the development of both static and dynamic websites, I have decided to invest time in this roject in order to learn how to:
+I have decided to invest time in this roject in order to learn how to:
 * Use filezilla
 * Upload an push new changes to a server (that will be used to host my website with its official domain)
 * Use and integrate google recaptca v3
-* Use send_email() php function. 
 * Implement basic JS animation (extension effect and dynamic text building)
-* Setup SMTP server. 
 
 ### Mind that
 
