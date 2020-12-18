@@ -10,6 +10,9 @@
      color: green;
 }
 
+.company, .time{
+    font-weight:bold;
+}
 
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
 .counter {
