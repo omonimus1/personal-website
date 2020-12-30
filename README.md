@@ -1,7 +1,7 @@
 ## Davide Pollicino E-Portofio
 
 This repository is used for the mantainement and management of the second version of my personal E-Portfolio; **STILL UNDER IMPLEMENTATION**
-You see the Portfolio visiting [https://omonimus1.github.io/personal-website/](https://omonimus1.github.io/personal-website//)
+You see the Portfolio visiting [http://davidepollicino.com/](http://davidepollicino.com/)
 
 ### Why do I am working on it?
 
